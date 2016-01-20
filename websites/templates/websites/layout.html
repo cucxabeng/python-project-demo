@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block head_title %}{% endblock %}</title>
+    <script type="application/javascript" src="{% static 'websites/js/jquery-1.11.3.min.js' %}"></script>
+    <link href="{% static 'websites/css/styles.css' %}" rel="stylesheet" type="text/css">
+
+    <script src="{% static 'websites/js/jquery.modal.js' %}" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="{% static 'websites/css/jquery.modal.css' %}" type="text/css" media="screen" />
+</head>
+
+<body>
+<div class="menu-left">
+
+    <a href="#" id="logo"></a>
+
+    <a href="/" id="home"></a>
+    <a href="javascript:;" id="trailer"></a>
+    <a href="javascript:;" id="tinhnang"></a>
+    <a href="#ex2" id="chichngay" rel="modal:open"></a>
+    <ul class="menu-content">
+        <li class="menu-item"><a href="javascript:;">TRANG CHỦ</a></li>
+        <li class="menu-item"><a href="javascript:;">DIỄN ĐÀN</a></li>
+        <li class="menu-item"><a href="javascript:;">FANPAGE</a></li>
+    </ul>
+    <ul class="menu-content">
+        <li class="menu-item"><a>Xin chao</a></li>
+    </ul>
+
+</div>
+<form action="" class="login_form modal" id="ex2" style="display:none;">
+  <h3>Please login to continue</h3>
+  <p><label>Username:</label><input type="text" /></p>
+  <p><label>Password:</label><input type="password" /></p>
+  <p><input type="submit" value="Login" /></p>
+</form>
+
+<div class="page">
+    {% block content %}
+
+    {% endblock %}
+</div>
+</body>
+
+</html>

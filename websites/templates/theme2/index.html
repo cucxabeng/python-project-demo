@@ -1,0 +1,105 @@
+{% extends 'theme2/layout.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="content-left">
+            <div class="login-box-left">
+                <h1>Đăng nhập</h1>
+
+                <form method="post" action="http://iplayvn.net/do_login.php">
+                    <div class="form-row">
+                        <input type="text" name="username" class="login-input" placeholder="Tên đăng nhập">
+                    </div>
+                    <div class="form-row">
+                        <input type="password" name="pass" class="login-input" placeholder="Mật khẩu">
+                    </div>
+                    <div class="form-row">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="submit" class="btn-login" value="Đăng nhập">
+                    </div>
+                    <div class="form-row">
+                        <a href="register.html" align="center" class="btn-register">Đăng ký</a>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <div class="hotro">
+                <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+
+                <div class="hotro-content">
+                    <p>
+                        <img src="{% static 'theme2/images/phone-icon.png' %}" width="40px">
+                        <strong>096 202 13 60 </strong>
+                    </p>
+
+                    <p>
+                        <img src="{% static 'theme2/images/home.png' %}" width="40px">
+                        <strong><a href="index.html">iplayvn.net</a> </strong>
+                    </p>
+
+                    <p>
+                        <img src="{% static 'theme2/images/icon-facebook.png' %}" width="40px">
+                        <strong><a href="https://www.facebook.com/iplayvn.net/">facebook.com/iplayvn.net</a> </strong>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+<div class="content-right">
+            <div class="download-wrapper">
+                <div class="os-download">
+                    <!--window phone-->
+                    <div id="window-phone-download">
+                        <div class="facebook-link-content">
+                            <a href="https://www.facebook.com/iplayvn.net/"><img
+                                    src="{% static 'theme2/css/img/btn-fanpage.png' %}"></a>
+                            <a href="https://www.facebook.com/iplayvn.net/"><img
+                                    src="{% static 'theme2/css/img/btn-facebook.png' %}"></a>
+                            <img src="{% static 'theme2/images/phone.png' %}" style="margin-left:120px">
+
+                        </div>
+
+                        <div class="os-link-download">
+                            <div>
+                                <a href="#"><img src="{% static 'theme2/css/img/btn-dowload.png' %}"></a>
+                            </div>
+                            <div>
+                                <span class="text-blue">Phiên bản</span>
+                                <br>
+                                dành cho WINDOW!
+                            </div>
+                            <p><a href="#" onclick=""><img
+                                    src="{% static 'theme2/css/img/btn-windowdownload.png' %}"></a></p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="tab-panel">
+                <div class="tab-header">
+                    <a class="tab  tab-active" href="#iframe-recharge" rel="modal:open" id="tab-1">NẠP THẺ</a>
+                    <a href="huongdan.html#tab-2" class="tab" id="tab-2">HƯỚNG DẪN</a>
+                </div>
+                <div class="tab-content-wrapper">
+                    <div class="tab-content" id="tab-content-1">
+                        <div class="content-text">
+                            <div align="center">
+
+
+                                <img src="{% static 'theme2/images/img1.png' %}"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+<div class="clear"></div>
+
+{% endblock %}

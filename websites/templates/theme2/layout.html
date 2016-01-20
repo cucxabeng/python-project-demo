@@ -1,0 +1,115 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link href="{% static 'theme2/js/jquery.modal.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'theme2/css/styles.css' %}" rel="stylesheet" type="text/css">
+</head>
+<script type="text/javascript" src="{% static 'theme2/js/jquery-1.12.0.min.js' %}"></script>
+<script src="{% static 'theme2/js/jquery.modal.min.js' %}" type="text/javascript" charset="utf-8"></script>
+
+
+<body>
+
+<div class="page bg2">
+    <div class="header"><a href="#" class="header-logo"></a>
+
+        <div class="menu-content menu-content-left">
+            <a href="/">TRANG CHỦ</a>
+            <a href="huongdan.html#tab-1">HƯỚNG DẪN</a>
+            <a href="#">SỰ KIỆN</a></div>
+        <div class="menu-content menu-content-right">
+            <a href="index-2.html#tab-1">NẠP TIỀN</a>
+            <a href="index-2.html">ĐĂNG NHẬP</a> <a href="register.html">ĐĂNG KÝ</a>
+
+        </div>
+    </div>
+    <div class="content-wrapper">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+</div>
+<div class="facebook-like-box">
+
+</div>
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-content-4">
+            <h4>IPAY</h4>
+
+            <p><a href="#">Trang chủ</a></p>
+
+            <p><a href="#">Quảng cáo</a></p>
+
+            <p><a href="#">Điều khoản sử dụng</a></p>
+
+            <p><a href="#">Chính sách riêng tư</a></p>
+
+            <p><a href="#">Facebook</a></p>
+
+        </div>
+        <div class="footer-content-4">
+            <h4>IPAY</h4>
+
+            <p><a href="#">Iphone</a></p>
+
+            <p><a href="#">Ipad</a></p>
+
+            <p><a href="#">Android</a></p>
+
+            <p><a href="#">Window Phone</a></p>
+
+            <p><a href="#">Facebook</a></p>
+
+        </div>
+        <div class="footer-content-4">
+            <h4>IPAY</h4>
+
+            <p><a href="#">Cách chơi các game</a></p>
+
+            <p><a href="#">Giải đấu</a></p>
+
+            <p><a href="#">Thuật ngữ</a></p>
+
+            <p><a href="#">Hỗ trợ</a></p>
+
+        </div>
+        <div class="footer-content-4">
+            <h4>IPAY</h4>
+
+            <p><a href="#">Bài viết</a></p>
+
+            <p><a href="#">Câu hỏi của tuần</a></p>
+
+            <p><a href="#">Tác giả</a></p>
+
+        </div>
+    </div>
+    <div class="footer-content-4">
+        <h4>IPAY</h4>
+
+        <p><a href="#">Đăng nhập</a></p>
+
+        <p><a href="#">Đăng ký</a></p>
+
+        <p align="center"><a class="btn">Chơi ngay</a></p>
+
+        <p align="center"><a class="btn">Nạp tiền</a></p>
+    </div>
+    <div style="color:#fff; font-size:12px; text-align:center; margin-top:30px; clear:both">
+        Trò chơi chỉ dành cho những người trong độ tuổi hợp pháp. Để đảm báo sức khỏe khuyến cáo không nên chơi quá 24
+        tiếng trong ngày !
+        <br>
+
+        <p>Điều khoản sử dụng</p>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
